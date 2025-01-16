@@ -9,3 +9,12 @@ print(var, account_balance, client_name)
 
 var="3.8.5"
 print("Python Version: "+var)
+
+a=5
+print(a)
+a+=2
+print(a)
+a*=2
+print(a)
+a**=2
+print(a)
