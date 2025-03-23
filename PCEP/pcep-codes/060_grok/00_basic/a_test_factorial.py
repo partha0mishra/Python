@@ -20,5 +20,9 @@ class TestFactorial(unittest.TestCase):
         with self.assertRaises(ValueError):
             factorial(101)
 
+    def test_max_limit(self): # Check that it works for 100 which is the max value
+        expected = 93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000
+        self.assertEqual(factorial(100),expected)
+
 if __name__ == "__main__":
     unittest.main()
