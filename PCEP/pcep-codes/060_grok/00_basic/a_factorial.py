@@ -1,7 +1,6 @@
 # factorial.py
 def factorial(n):
     if n < 0:
-        #return "Factorial not defined for negative numbers"
         return None
     elif n == 0:
         return 1
@@ -12,5 +11,13 @@ def factorial(n):
         return result
 
 if __name__ == "__main__":
-    num = int(input("Enter a number: "))
-    print(f"The factorial of {num} is {factorial(num)}")
+    while True:
+        try:
+            user_input = input("Enter a number (or 'quit' to exit): ")
+            if user_input.lower() == "quit":
+                print("Goodbye!")
+                break
+            num = int(user_input)
+            print(f"The factorial of {num} is {factorial(num)}")
+        except ValueError:
+            print("Please enter a valid integer or 'quit'.")
