@@ -11,7 +11,8 @@ class TestFactorial(unittest.TestCase):
         self.assertEqual(factorial(0), 1)    # 0! is defined as 1
 
     def test_negative_number(self):
-        self.assertEqual(factorial(-1), "Factorial not defined for negative numbers")
+        #self.assertEqual(factorial(-1), "Factorial not defined for negative numbers")
+        self.assertIsNone(factorial(-1))
 
 if __name__ == "__main__":
     unittest.main()

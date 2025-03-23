@@ -1,7 +1,8 @@
 # factorial.py
 def factorial(n):
     if n < 0:
-        return "Factorial not defined for negative numbers"
+        #return "Factorial not defined for negative numbers"
+        return None
     elif n == 0:
         return 1
     else:
