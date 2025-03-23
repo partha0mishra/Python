@@ -2,6 +2,8 @@
 def factorial(n):
     if n < 0:
         return None
+    elif n > 100:
+        raise ValueError("Number too large! Max allowed is 100.")
     elif n == 0:
         return 1
     else:
@@ -19,5 +21,5 @@ if __name__ == "__main__":
                 break
             num = int(user_input)
             print(f"The factorial of {num} is {factorial(num)}")
-        except ValueError:
-            print("Please enter a valid integer or 'quit'.")
+        except ValueError as e:
+            print(f"Error: {e}")  # Catches both invalid input and our custom exception

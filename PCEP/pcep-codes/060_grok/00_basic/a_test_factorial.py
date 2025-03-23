@@ -13,8 +13,12 @@ class TestFactorial(unittest.TestCase):
     def test_negative_number(self):
         self.assertIsNone(factorial(-1))
 
-    def test_one(self):  # New test case
+    def test_one(self):
         self.assertEqual(factorial(1), 1)
+
+    def test_too_large(self):  # New test case
+        with self.assertRaises(ValueError):
+            factorial(101)
 
 if __name__ == "__main__":
     unittest.main()
