@@ -1,6 +1,6 @@
 # test_factorial.py
 import unittest
-from a_factorial import factorial
+from factorial import factorial
 
 class TestFactorial(unittest.TestCase):
     def test_positive_number(self):

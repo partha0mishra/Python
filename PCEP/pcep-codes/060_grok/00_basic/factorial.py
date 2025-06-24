@@ -23,3 +23,4 @@ if __name__ == "__main__":
             print(f"The factorial of {num} is {factorial(num)}")
         except ValueError as e:
             print(f"Error: {e}")  # Catches both invalid input and our custom exception
+            # print ("Please enter a valid number of 'quit' ")
